@@ -6,7 +6,7 @@
 ***Solve*** 
 
 * Dùng string để check các chuỗi có trong binary này.
-```shell
+```
 └─$ strings out | tail
 Z4u.
 Z/-id%ABI-
@@ -20,7 +20,7 @@ UPX!
 UPX!
 ```
 * Ở dòng cuối có thể thấy được file này được đóng gói bởi UPX. Unpack file này và thu được file ***out*** mới đã được unpack
-```shell
+```
 └─$ upx -d out
                        Ultimate Packer for eXecutables
                           Copyright (C) 1996 - 2024
@@ -37,7 +37,7 @@ UPX 4.2.2       Markus Oberhumer, Laszlo Molnar & John Reiser    Jan 3rd 2024
 Unpacked 1 file.
 ```
 * Dùng strings để tìm chuỗi có flag, ta thu được 
-```shell
+```
 └─$ strings out | grep "flag"
 Password correct, please see flag: 7069636f4354467b5539585f556e5034636b314e365f42316e34526933535f33373161613966667d
 ```

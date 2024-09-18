@@ -8,7 +8,7 @@ Checkout my `program` running on a linux box. Unzip the archive with the passwor
 # Solution:
 
 * Đầu tiên, check file source và ta thấy lỗ hổng tràn bộ đệm ở `gets()` trong hàm `vuln`.
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

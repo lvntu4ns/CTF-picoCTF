@@ -7,7 +7,7 @@ I'm just copying and pasting with this `program`. What can go wrong? You can vie
 `nc saturn.picoctf.net 64250`
 
 # Source 
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -9,7 +9,7 @@ Additional details will be available after launching your challenge instance.
 
 ## Solution
 #### Source code
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

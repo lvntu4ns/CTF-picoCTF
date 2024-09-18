@@ -5,7 +5,7 @@ Do you think you can bypass the protection and get the flag?
 Additional details will be available after launching your challenge instance.
 
 # Source code:
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -128,7 +128,7 @@ gef➤  pattern offset 0x61616171
 
 * Do việc kiểm tra canary này chỉ so sánh các ký tự nên nếu đầu vào là `aaaa..(64 kí tự)..aaat` hoặc `aaa..(64 kí tự)..aaate` hoặc `aaa..(64 kí tự)..aaates` hoặc `aaa..(64 kí tự)..aaatest` thì vẫn có thể by pass.
 * Tạo một chương trình để brute force canary bằng cách tìm từng chữ từ trái qua phải
-```
+```c
 from pwn import *
 import time
 
